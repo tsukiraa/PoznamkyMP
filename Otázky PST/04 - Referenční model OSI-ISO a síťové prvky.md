@@ -73,7 +73,7 @@ Při problémech, při průchodu jednotlivími vrstvami nám k řešení pomáha
 Zachycení síťového provozu a jeho analýza v reálném čase. Zobrazí celý obsah paketu.
 ###### tcpdump (L2-L7)
 CLI zachtávač provozu pro Linux/Unix. Ukládá do `.pcap` (lze otevřít v wiresharku).
-###### ping (L3)
+###### ping (IMCP L3)
 Test dosažitelnosti hosta. Zobrazí RTT (Round Trip Type) a ztrátovost packetů. V případě nedostupnost různé kódy:
 - 0 - net unreachable
 - 1 - host unreachable
