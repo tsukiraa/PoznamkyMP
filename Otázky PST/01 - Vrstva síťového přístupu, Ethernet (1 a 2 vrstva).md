@@ -77,14 +77,14 @@ Bezdrátové sítě jsou definovány standartem IEEE 802.11. Jako médium přeno
 ### Identifikace vysílače a příjemce
 
 ##### MAC Vrstva
-Každé rozhraní vysílače nebo příjemce je identifikováno svojí MAC adresou. Adresa se skládá z 6ti dvojic hexadecimálních čísel. Není přiřazená, takže lze jednoduše změnit. Každý zařízení má tvz. ARP cache kam si ukádá zjištěné IP adresy. Ty zjištuje pomocí ARP protokolu.
+Každé rozhraní vysílače nebo příjemce je identifikováno svojí MAC adresou. Adresa se skládá z 6ti dvojic hexadecimálních čísel (první tři jsou identifikátor výrobce a poslední tři sériové číslo). Není přiřazená, takže lze jednoduše změnit. Každý zařízení má tvz. ARP cache kam si ukádá zjištěné IP adresy. Ty zjištuje pomocí ARP protokolu.
 
 ###### Typy adresace
 
-| **Unicast**   | 1 => 1               | Normální komunikace                                    |
-| ------------- | -------------------- | ------------------------------------------------------ |
-| **Broadcast** | 1=> všichni          | Přijmou všichni v LAN. MAC adresa: FF-FF-FF-FF-FF-FF   |
-| **Multicast** | 1 => vybraná skupina | Přijmou specifičtí hosté (přihlášení) MAC: 01-xx-xx... |
+| **Unicast**   | 1 => 1               | Normální komunikace                                                                                                                                |
+| ------------- | -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Broadcast** | 1=> všichni          | Přijmou všichni v LAN. MAC adresa: FF-FF-FF-FF-FF-FF                                                                                               |
+| **Multicast** | 1 => vybraná skupina | Přijmou specifičtí hosté (přihlášení) (7 bit je 1) IPV4MAC: 01-00-5E-00-00-00 až 10-00-5E-7F-FF-FF IPV6MAC: 33-33-00-00-00-00 až 33-33-00-00-00-00 |
 
 ###### ARP
 Častokrát když vysíláme tak známe pouze IP adresu (vrstva 3). Proto, aby jsme získali z ní MAC adresu slouží protokol ARP. Funguje dle znázornění na obrázku:
