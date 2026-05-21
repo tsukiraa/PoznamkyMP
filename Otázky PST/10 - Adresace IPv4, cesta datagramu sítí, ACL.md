@@ -38,6 +38,8 @@ Existují potom ještě speciální adresy sloužící pro specifické účely:
 - **x.x.x.255** *(poslední adresa v síti)* - Směrovatelný broadcast sítě: Osloví všechny hosty této sítě. Lze zaslat i z sítě jiné. V dnešní době zahazován routery z důvodu ochrany před Smurf útoky.
 - **255.255.255.255** - Limited Broadcast: Osloví všechny počítače ve stejné síti jako je počítač odesílatele. Používá se když je počítač bez adresy.
 - **224.0.0.0/4** - Rozsah sloužící pro IPv4 multicasty.
+
+*Lze používat i anycast. Ten funguje, tak že více počítačů má 1 unicasovou adresu*
 ### Protokoly L3 *(a ARP z nějakého důvodu)*
 Na třetí vrsvě nám zajišťuje komunikaci protokol IP (Internet Protocol). Slouží k směrování paketů mezi jednotlivými sítěmi. K tomu používá IP adresu, kterou jsme probrali výše. Na obrázku níže je vyzobrazena jeho hlavička:
 
