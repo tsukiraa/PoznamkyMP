@@ -1,4 +1,4 @@
-Tohle je centrální dokument na všechny dokumenty s otázkami. Všechny informace se budu snažit zdrojovat (*moc mi to nešlo*), aby jste s mohli přečíst více.
+Tohle je centrální dokument na všechny dokumenty s otázkami., aby jste s mohli přečíst více.
 
 KYB
 [[01 - Cíle a základní pojmy kybernetické bezpečnosti]]
@@ -14,3 +14,7 @@ PST
 [[06 - Inter-VLAN Routing]]
 [[07 - Spolehlivá síť - STP, Etherchannel, FHRP]]
 [[09 - Protokol TCP a UDP (4 vrstva)]]
+[[10 - Adresace IPv4, cesta datagramu sítí, ACL]]
+[[11 - Protokol IPv6]]
+[[12 - Směrování, směrovací tabulky, směrovací protokoly]]
+[[13 - Zabezpečení WLAN]]
