@@ -10,7 +10,7 @@ Ve světě mikroprocesorů existuijí dvě nejčastější architektury. Von Neu
 
 **Harvardská architektura** je architektura kde dochází k rozdělení paměti. Hlavní výhodou je paraleriace přístupu *(k paměti dat se přistupuje nezávisle od paměti instrukcí)*. Povětšinou toto hardwarové rozhodnutí vede i k větší bepečnosti mikrokontroleru. *(menší šance k neoprávněnému přístupu do paměti programu)*. Avšak nevýhodami je větší složitost čipu a vyšší cena.
 
-![[Pasted image 20260524185007.png]]
+![[01 - Harward.png]]
 
 ---
 ### Architektura instrukční sady (ISA)
