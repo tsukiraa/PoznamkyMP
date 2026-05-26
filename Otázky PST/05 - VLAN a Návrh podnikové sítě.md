@@ -52,5 +52,23 @@ Velikost sítí se přispůsubuje počtu hostů. Neplýtváme adresami.
 
 ### Návrh podnikové sítě
 Vrámci této otázky má student navrhnout síť s šesti VLANnama. Má přitom rozdělovat sítě pomocí VLSM.
+1. **Výchozí zadání**
+	* **Síť:** `192.168.0.0/24`
+	* **Počet VLAN:** 6
+	* **Metoda:** VLSM (Variable Length Subnet Mask)
+	
+	 Výpočet celkového prostoru
+	* $32 - 24 = 8$ bitů pro hosty
+	* $2^8 = 256$ adres k dispozici (`192.168.0.0` až `192.168.0.255`)
 
-*Příklad zadání:* Síťový blok 192.168.0.0/24
+ 2. **Návrh velikosti podsítí**
+	Pokus 2 (Zredukované požadavky)
+	* **VL1:** 25 hostů -> alokováno $32$ adres ($2^5$)
+	* **VL2:** 25 hostů -> alokováno $32$ adres
+	* **VL3:** 25 hostů -> alokováno $32$ adres
+	* **VL4:** 30 hostů -> alokováno $32$ adres
+	* **VL5:** 10 hostů -> alokováno $16$ adres ($2^4$)
+	* **VL6:** 10 hostů -> alokováno $16$ adres
+	* **Celkem:** $160$ adres ($\le 255$) -> **OK (vyhovuje)**
+
+---
